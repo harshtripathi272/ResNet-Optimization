@@ -79,7 +79,7 @@ Adding dendrites to the ResNet-18 architecture results in a clear boost in class
 
 This improvement demonstrates that the model effectively utilizes the additional dendritic capacity to learn more complex features on the CIFAR-100 dataset.
 
-![Accuracy Comparison Graph](results/ACCURACY.png)
+![Accuracy Comparison Graph](ACCURACY.png)
 *(Place your specific accuracy graph here)*
 
 ### Parameter Comparison
@@ -92,7 +92,7 @@ The dendritic model achieves its accuracy gains with significantly fewer paramet
 
 The dendritic growth added only ~1.2M parameters to the base ResNet-18, a small cost for the performance recovered.
 
-![Parameter Comparison Graph](results/COMPRESSION.png)
+![Parameter Comparison Graph](COMPRESSION.png)
 *(Place your specific parameter comparison graph here)*
 
 ### Remaining Error Reduction
@@ -109,7 +109,7 @@ Dendritic optimization eliminated **3.1%** of the remaining classification error
 
 Below is the automatically generated Perforated AI training graph, saved directly from the PAI library (`results/PAI.png`).
 
-![PAI Training Graph](results/PAI.png)
+![PAI Training Graph](PAI.png)
 
 *This graph confirms that dendrites were correctly targeted, added, and trained during the experiment.*
 
@@ -117,7 +117,7 @@ Below is the automatically generated Perforated AI training graph, saved directl
 
 A simplified comparison of Accuracy vs. Parameters visualizing the efficiency frontier.
 
-![Accuracy vs Params](results/comparison.png)
+![Accuracy vs Params](comparison.png)
 
 ## Weights and Biases Sweep Report
 
