@@ -1,0 +1,88 @@
+Traceback (most recent call last):                                                                                         
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 57, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 24, in main
+    acc_r18, params_r18 = train.run_experiment(model_r18, "ResNet18_Baseline",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 133, in run_experiment
+    train_loss, train_acc = train_one_epoch(model, trainloader, optimizer, criterion, device, use_pai)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 41, in train_one_epoch
+    outputs = model(inputs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torchvision/models/resnet.py", line 275, in _forward_impl
+    x = self.layer3(x)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torchvision/models/resnet.py", line 100, in forward
+    identity = self.downsample(x)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 548, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 543, in _conv_forward
+    return F.conv2d(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 0 has a total capacity of 47.45 GiB of which 26.06 MiB is free. Process 3007818 has 232.00 MiB memory in use. Process 3013605 has 250.00 MiB memory in use. Process 4111044 has 43.88 GiB memory in use. Including non-PyTorch memory, this process has 2.68 GiB memory in use. Of the allocated memory 2.46 GiB is allocated by PyTorch, and 29.10 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 57, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 24, in main
+    acc_r18, params_r18 = train.run_experiment(model_r18, "ResNet18_Baseline",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 133, in run_experiment
+    train_loss, train_acc = train_one_epoch(model, trainloader, optimizer, criterion, device, use_pai)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 41, in train_one_epoch
+    outputs = model(inputs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torchvision/models/resnet.py", line 285, in forward
+    return self._forward_impl(x)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torchvision/models/resnet.py", line 275, in _forward_impl
+    x = self.layer3(x)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torchvision/models/resnet.py", line 100, in forward
+    identity = self.downsample(x)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 548, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 543, in _conv_forward
+    return F.conv2d(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 0 has a total capacity of 47.45 GiB of which 26.06 MiB is free. Process 3007818 has 232.00 MiB memory in use. Process 3013605 has 250.00 MiB memory in use. Process 4111044 has 43.88 GiB memory in use. Including non-PyTorch memory, this process has 2.68 GiB memory in use. Of the allocated memory 2.46 GiB is allocated by PyTorch, and 29.10 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

@@ -1,0 +1,21 @@
+Traceback (most recent call last):                                                                                         
+Epoch 1/30 | Train Loss: 3.2850 Acc: 30.47% | Val Loss: 2.0833 Acc: 54.05% | Params: 11.23M
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 57, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 24, in main
+    acc_r18, params_r18 = train.run_experiment(model_r18, "ResNet18_Baseline",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 134, in run_experiment
+    val_loss, val_acc = validate(model, testloader, criterion, device)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 82, in validate
+    running_loss += loss.item()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 57, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 24, in main
+    acc_r18, params_r18 = train.run_experiment(model_r18, "ResNet18_Baseline",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 134, in run_experiment
+    val_loss, val_acc = validate(model, testloader, criterion, device)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 82, in validate
+    running_loss += loss.item()
+KeyboardInterrupt

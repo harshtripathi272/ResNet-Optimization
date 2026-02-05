@@ -1,0 +1,36 @@
+{
+  "os":  "Linux-6.2.0-36-generic-x86_64-with-glibc2.35",
+  "python":  "CPython 3.10.19",
+  "startedAt":  "2026-01-17T06:46:25.010347Z",
+  "program":  "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py",
+  "codePath":  "dendritic_experiment/main.py",
+  "codePathLocal":  "dendritic_experiment/main.py",
+  "email":  "krishr@iitbhilai.ac.in",
+  "root":  "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100",
+  "host":  "SJP-DIT400TR-55L",
+  "executable":  "/home/pranshu/miniconda3/envs/perforated-nlp/bin/python",
+  "cpu_count":  48,
+  "cpu_count_logical":  96,
+  "gpu":  "Quadro RTX 8000",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "1974218772480",
+      "used":  "1660321968128"
+    }
+  },
+  "memory":  {
+    "total":  "540632231936"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "Quadro RTX 8000",
+      "memoryTotal":  "51539607552",
+      "cudaCores":  4608,
+      "architecture":  "Turing",
+      "uuid":  "GPU-37ad13e0-4d65-6cf4-cba0-e543ece4e31e"
+    }
+  ],
+  "cudaVersion":  "12.3",
+  "writerId":  "8xnjquxmsyndhstd105hz5xke47qgdkn"
+}

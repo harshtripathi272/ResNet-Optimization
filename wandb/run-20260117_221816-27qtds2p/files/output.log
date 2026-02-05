@@ -1,0 +1,11 @@
+Initializing PerforatedAI...
+Applying strict dendrite targeting...
+  -> Targeted: layer3.0.conv2
+  -> Targeted: layer3.1.conv2
+  -> Targeted: layer4.0.conv2
+Configuring PAI settings...
+New list value of "_modules_to_track": [<class 'torch.nn.modules.conv.Conv2d'>, <class 'torch.nn.modules.linear.Linear'>, <class 'torch.nn.modules.batchnorm.BatchNorm2d'>]
+Variable 'p_epochs_to_switch' does not exist.  Ignoring set attempt.
+Running a test of Dendrite Capacity.
+Using Gradient Descent Dendrites (Open Source Mode)
+Training:   0%|                                                                                                                              | 0/391 [00:00<?, ?it/s]

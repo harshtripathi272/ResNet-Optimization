@@ -1,0 +1,1 @@
+{"val_acc":81.11,"lr":0.0006985739453173903,"_timestamp":1.7686562782468665e+09,"_step":36,"epoch":37,"val_loss":0.7021326015267191,"_wandb":{"runtime":6879},"pai_restructured":0,"train_acc":99.88,"params":11227812,"train_loss":0.03974554486706129,"_runtime":6879}

@@ -1,0 +1,57 @@
+Initializing PerforatedAI...
+Applying strict dendrite targeting...
+  -> Targeted: layer3.0.conv2
+  -> Targeted: layer3.1.conv2
+  -> Targeted: layer4.0.conv2
+Configuring PAI settings...
+New list value of "_modules_to_track": [<class 'torch.nn.modules.conv.Conv2d'>, <class 'torch.nn.modules.linear.Linear'>, <class 'torch.nn.modules.batchnorm.BatchNorm2d'>]
+Running a test of Dendrite Capacity.
+Perforated Backpropagation ENABLED (Paid License Active)
+/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/optim/lr_scheduler.py:182: UserWarning: Seems like `optimizer.step()` has been overridden after learning rate scheduler initialization. Please, make sure to call `optimizer.step()` before `lr_scheduler.step()`. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn(
+Adding validation score 55.22000000
+Checking PAI switch with mode n, switch mode DOING_SWITCH_EVERY_TIME, epoch 0, last improved epoch 0, total epochs 0, n: 6, num_cycles: 0
+Returning True - switching every time
+Importing best Model for switch to PA...
+Epoch 1: Model Restructured! Adding Dendrite.
+Epoch 1/100 | Train Loss: 3.2836 Acc: 30.67% | Val Loss: 2.0391 Acc: 55.22% | Params: 21.84M
+Traceback (most recent call last):                                                                                          
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 83, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 65, in main
+    acc_pai, params_pai = train.run_experiment(model_pai, "ResNet18_PAI",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 192, in run_experiment
+    train_loss, train_acc = train_one_epoch(model, trainloader, optimizer, criterion, device, use_pai)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 48, in train_one_epoch
+    GPA.pai_tracker.apply_pb_grads()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/PAI_repo/perforatedai/tracker_perforatedai.py", line 3379, in apply_pb_grads
+    module.apply_pb_grads()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/PAI_repo/perforatedai/modules_perforatedai.py", line 315, in apply_pb_grads
+    self.dendrite_module.apply_pb_grads()
+  File "perforatedbp/modules_pbp.py", line 499, in perforatedbp.modules_pbp.apply_pb_grads
+  File "perforatedbp/modules_pbp.py", line 595, in perforatedbp.modules_pbp.get_cc_loss
+  File "perforatedbp/modules_pbp.py", line 602, in perforatedbp.modules_pbp.get_cc_loss
+  File "perforatedbp/modules_pbp.py", line 80, in perforatedbp.modules_pbp.get_tuples_and_mult
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1951, in __getattr__
+    def __getattr__(self, name: str) -> Union[Tensor, "Module"]:
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 83, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 65, in main
+    acc_pai, params_pai = train.run_experiment(model_pai, "ResNet18_PAI",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 192, in run_experiment
+    train_loss, train_acc = train_one_epoch(model, trainloader, optimizer, criterion, device, use_pai)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 48, in train_one_epoch
+    GPA.pai_tracker.apply_pb_grads()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/PAI_repo/perforatedai/tracker_perforatedai.py", line 3379, in apply_pb_grads
+    module.apply_pb_grads()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/PAI_repo/perforatedai/modules_perforatedai.py", line 315, in apply_pb_grads
+    self.dendrite_module.apply_pb_grads()
+  File "perforatedbp/modules_pbp.py", line 499, in perforatedbp.modules_pbp.apply_pb_grads
+  File "perforatedbp/modules_pbp.py", line 595, in perforatedbp.modules_pbp.get_cc_loss
+  File "perforatedbp/modules_pbp.py", line 602, in perforatedbp.modules_pbp.get_cc_loss
+  File "perforatedbp/modules_pbp.py", line 80, in perforatedbp.modules_pbp.get_tuples_and_mult
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1951, in __getattr__
+    def __getattr__(self, name: str) -> Union[Tensor, "Module"]:
+KeyboardInterrupt

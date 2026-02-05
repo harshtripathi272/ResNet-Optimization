@@ -1,0 +1,53 @@
+_wandb:
+    value:
+        cli_version: 0.23.1
+        e:
+            pcjxgabsy8kv0nidabkiqevzkbqk2khj:
+                codePath: dendritic_experiment/main.py
+                codePathLocal: dendritic_experiment/main.py
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "12.3"
+                disk:
+                    /:
+                        total: "1974218772480"
+                        used: "1660918927360"
+                email: krishr@iitbhilai.ac.in
+                executable: /home/pranshu/miniconda3/envs/perforated-nlp/bin/python
+                gpu: Quadro RTX 8000
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Turing
+                      cudaCores: 4608
+                      memoryTotal: "51539607552"
+                      name: Quadro RTX 8000
+                      uuid: GPU-37ad13e0-4d65-6cf4-cba0-e543ece4e31e
+                host: SJP-DIT400TR-55L
+                memory:
+                    total: "540632231936"
+                os: Linux-6.2.0-36-generic-x86_64-with-glibc2.35
+                program: /data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py
+                python: CPython 3.10.19
+                root: /data3/Pranshu/elephant_detection/PyTorch/CIFAR-100
+                startedAt: "2026-01-17T08:31:44.495477Z"
+                writerId: pcjxgabsy8kv0nidabkiqevzkbqk2khj
+        m: []
+        python_version: 3.10.19
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 2
+                - 13
+            "4": 3.10.19
+            "5": 0.23.1
+            "8":
+                - 2
+            "10":
+                - 20
+            "12": 0.23.1
+            "13": linux-x86_64

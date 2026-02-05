@@ -1,0 +1,16 @@
+Traceback (most recent call last):                                                                                         
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 56, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 23, in main
+    acc_r18, params_r18 = train.run_experiment(model_r18, "ResNet18_Baseline",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 165, in run_experiment
+    current_params = utils.count_parameters(model)
+AttributeError: module 'utils' has no attribute 'count_parameters'
+Traceback (most recent call last):
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 56, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 23, in main
+    acc_r18, params_r18 = train.run_experiment(model_r18, "ResNet18_Baseline",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 165, in run_experiment
+    current_params = utils.count_parameters(model)
+AttributeError: module 'utils' has no attribute 'count_parameters'

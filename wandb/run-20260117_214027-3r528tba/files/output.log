@@ -1,0 +1,60 @@
+Initializing PerforatedAI...
+Applying strict dendrite targeting...
+  -> Targeted: layer3.0.conv2
+  -> Targeted: layer3.1.conv2
+  -> Targeted: layer4.0.conv2
+Configuring PAI settings...
+Running a test of Dendrite Capacity.
+Variable 'making_graphs' does not exist.  Ignoring set attempt.
+Perforated Backpropagation ENABLED (Paid License Active)
+For PAI training it is recommended to not use weight decay in your optimizer
+Set GPA.pc.set_weight_decay_accepted(True) to ignore this warning or c to continue
+> /data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/PAI_repo/perforatedai/tracker_perforatedai.py(1559)set_optimizer_instance()
+-> for param_group in optimizer_instance.param_groups:
+WARNING: Parameter does not have parameter_type attribute in n mode
+You can find this param by going up in the stack and calling:
+UPA.find_param_name_by_id(model,140320908606448)
+Ensure that model is either converted or tracked
+Instructions in customization.md
+--Call--
+> /home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/wandb/sdk/lib/console_capture.py(172)write_with_callbacks()
+-> def write_with_callbacks(s: AnyStr, /) -> int:
+*** NameError: name 'cEOF' is not defined
+Traceback (most recent call last):
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 83, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 65, in main
+    acc_pai, params_pai = train.run_experiment(model_pai, "ResNet18_PAI",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 180, in run_experiment
+    momentum=config.MOMENTUM, weight_decay=config.WEIGHT_DECAY)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/PAI_repo/perforatedai/tracker_perforatedai.py", line 1578, in set_optimizer_instance
+    TPB.setup_optimizer_pb(self.member_vars["optimizer_instance"])
+  File "perforatedbp/tracker_pbp.py", line 113, in perforatedbp.tracker_pbp.setup_optimizer_pb
+  File "perforatedbp/tracker_pbp.py", line 217, in perforatedbp.tracker_pbp.filter_params
+  File "perforatedbp/tracker_pbp.py", line 170, in perforatedbp.tracker_pbp.filter_single_param_group
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/wandb/sdk/lib/console_capture.py", line 172, in write_with_callbacks
+    def write_with_callbacks(s: AnyStr, /) -> int:
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/bdb.py", line 92, in trace_dispatch
+    return self.dispatch_call(frame, arg)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/bdb.py", line 137, in dispatch_call
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+Traceback (most recent call last):
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 83, in <module>
+    main()
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/main.py", line 65, in main
+    acc_pai, params_pai = train.run_experiment(model_pai, "ResNet18_PAI",
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/dendritic_experiment/train.py", line 180, in run_experiment
+    momentum=config.MOMENTUM, weight_decay=config.WEIGHT_DECAY)
+  File "/data3/Pranshu/elephant_detection/PyTorch/CIFAR-100/PAI_repo/perforatedai/tracker_perforatedai.py", line 1578, in set_optimizer_instance
+    TPB.setup_optimizer_pb(self.member_vars["optimizer_instance"])
+  File "perforatedbp/tracker_pbp.py", line 113, in perforatedbp.tracker_pbp.setup_optimizer_pb
+  File "perforatedbp/tracker_pbp.py", line 217, in perforatedbp.tracker_pbp.filter_params
+  File "perforatedbp/tracker_pbp.py", line 170, in perforatedbp.tracker_pbp.filter_single_param_group
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/site-packages/wandb/sdk/lib/console_capture.py", line 172, in write_with_callbacks
+    def write_with_callbacks(s: AnyStr, /) -> int:
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/bdb.py", line 92, in trace_dispatch
+    return self.dispatch_call(frame, arg)
+  File "/home/pranshu/miniconda3/envs/perforated-nlp/lib/python3.10/bdb.py", line 137, in dispatch_call
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

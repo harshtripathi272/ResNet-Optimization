@@ -1,0 +1,36 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.10.0",
+  "startedAt":  "2026-01-17T16:48:16.073897Z",
+  "program":  "C:\\Users\\CSE IIT BHILAI\\Downloads\\Dendrites\\ResNet\\CIFAR-100\\dendritic_experiment\\main.py",
+  "codePath":  "dendritic_experiment\\main.py",
+  "codePathLocal":  "dendritic_experiment\\main.py",
+  "email":  "harsht@iitbhilai.ac.in",
+  "root":  "C:\\Users\\CSE IIT BHILAI\\Downloads\\Dendrites\\ResNet\\CIFAR-100",
+  "host":  "DESKTOP-FUO83C1",
+  "executable":  "C:\\Users\\CSE IIT BHILAI\\Downloads\\Dendrites\\ResNet\\CIFAR-100\\myenv\\Scripts\\python.exe",
+  "cpu_count":  16,
+  "cpu_count_logical":  24,
+  "gpu":  "NVIDIA GeForce RTX 3060",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "988595351552",
+      "used":  "514848567296"
+    }
+  },
+  "memory":  {
+    "total":  "16833392640"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3060",
+      "memoryTotal":  "12884901888",
+      "cudaCores":  3584,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-cfbf4e71-26c1-0293-a22e-124546c17d45"
+    }
+  ],
+  "cudaVersion":  "12.9",
+  "writerId":  "kjzgbwdxzv4lrvdtaoqqf1aec9hpnekk"
+}
